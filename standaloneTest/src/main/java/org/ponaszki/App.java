@@ -21,8 +21,8 @@ public class App
         robot.setAutoDelay(100);
         App a = new App("telephone-ring.wav");
 
-//        test(robot);
-        collect(robot, a);
+        test(robot);
+//        collect(robot, a);
 
         System.out.println( "Ended!!!!" );
     }
@@ -33,30 +33,32 @@ public class App
         Thread.sleep(5000);
         for(int i = 0 ; i<200 ; i++) {
             System.out.println( "Loop:" + i);
-            moveAndCllick(robot, 1670, 750, DELAY_MILLIS);
+            moveAndCllick(robot, 1350, 390, DELAY_MILLIS);
             select5MinPortion(robot);
-            moveAndCllick(robot, 1550, 800, DELAY_MILLIS);
+            moveAndCllick(robot, 1220, 450, DELAY_MILLIS);
             select5MinPortion(robot);
-            moveAndCllick(robot, 1420, 870, DELAY_MILLIS);
+            moveAndCllick(robot, 1090, 510, DELAY_MILLIS);
             select5MinPortion(robot);
-            moveAndCllick(robot, 1280, 930, DELAY_MILLIS);
+            moveAndCllick(robot, 960, 570, DELAY_MILLIS);
+            select5MinPortion(robot);
+            moveAndCllick(robot, 470, 350, DELAY_MILLIS);
             select5MinPortion(robot);
 
-            select5MinPortion(robot);
             Thread.sleep(310000);
             a.playSound();
             Thread.sleep(10000);
 
-            moveAndCllick(robot, 220, 15, DELAY_MILLIS);
-            moveAndCllick(robot, 1670, 750, DELAY_MILLIS);
-            moveAndCllick(robot, 1550, 800, DELAY_MILLIS);
-            moveAndCllick(robot, 1420, 870, DELAY_MILLIS);
-            moveAndCllick(robot, 1280, 930, DELAY_MILLIS);
+            moveAndCllick(robot, 120, 15, DELAY_MILLIS);
+            moveAndCllick(robot, 1350, 390, DELAY_MILLIS);
+            moveAndCllick(robot, 1220, 450, DELAY_MILLIS);
+            moveAndCllick(robot, 1090, 510, DELAY_MILLIS);
+            moveAndCllick(robot, 960, 570, DELAY_MILLIS);
+            moveAndCllick(robot, 470, 350, DELAY_MILLIS);
         }
     }
 
     private static void test(Robot robot) {
-        moveAndCllick(robot, 220, 15, DELAY_MILLIS);
+        moveAndCllick(robot, 120, 15, DELAY_MILLIS);
     }
 
     public static void moveAndCllick(Robot robot, int x, int y, int delayBefaore){
@@ -69,7 +71,7 @@ public class App
     }
 
     public static void select5MinPortion(Robot robot){
-        moveAndCllick(robot, 770, 500, DELAY_MILLIS);
+        moveAndCllick(robot, 600, 400, DELAY_MILLIS);
     }
 
     App(String url){

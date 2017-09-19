@@ -12,7 +12,6 @@
     </parent>
 
     <modules>
-        <module>frontend</module>
         <module>standaloneTest</module>
     </modules>
     <packaging>pom</packaging>
